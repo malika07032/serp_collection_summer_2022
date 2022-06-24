@@ -13,6 +13,7 @@ driverpath ='driver/chromedriver'
 chrome_options = webdriver.ChromeOptions()
 
 ### from youtube2 code (Ropah)
+chrome_options.add_argument('--headless')
 chrome_options.add_argument('--no-sandbox')
 chrome_options.add_argument('--disable-dev-shm-usage')
 desired_cap = chrome_options.to_capabilities()
