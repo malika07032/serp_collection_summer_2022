@@ -42,8 +42,8 @@ def get_serp_by_query(query, serp_folder_path):
 
 def search_all_queries(queries_file_csv):
     serp_folder_path = 'SERP_{}'.format(datetime.now())
-    if not os.path.isdir(serp_folder_path):
-        os.mkdir(serp_folder_path)
+    #if not os.path.isdir(serp_folder_path):
+    os.mkdir(serp_folder_path)
 
     with open(queries_file_csv, 'r') as inputF:
         queries = []
