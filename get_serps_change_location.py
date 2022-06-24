@@ -65,8 +65,9 @@ def search_all_queries():
     'NY-Auburn': {'latitude': 42.933334, 'longitude': -76.566666, 'accuracy': 100}}
 
     query = 'pizza'
-    for location in locations:
-        get_serp_by_query(query, location, 'CA-Alameda')
+    for name in locations:
+        loc = locations[name]
+        get_serp_by_query(query, loc, name)
     #with open(queries_file_csv, 'r') as inputF:
         
         #queries = []
