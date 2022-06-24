@@ -54,7 +54,7 @@ def get_serp_by_query(query, coordinatesDict, locationName):
         output.write(htmlPage)
     driver.close()
 
-def search_all_queries(queries_file_csv):
+def search_all_queries():
     #serp_folder_path = 'SERP_{}'.format(datetime.now())
     #os.mkdir(serp_folder_path)
     os.mkdir('pizza_results')
@@ -78,4 +78,4 @@ def search_all_queries(queries_file_csv):
         #get_serp_by_query(query, location, 'CA-Alameda')
 
 if __name__ == "__main__":
-    search_all_queries(sys.argv[1])
+    search_all_queries()
